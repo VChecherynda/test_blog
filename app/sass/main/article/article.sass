@@ -29,8 +29,10 @@
 			display: block	
 
 	&__caption
+		display: flex
+		justify-content: space-between
+		align-items: center
 		margin-bottom: 10px
-		padding: 10px 0
 		height: 40px
 		border-bottom: 1px solid $grey-3
 
@@ -71,26 +73,32 @@
 			background: url('../img/eye.png') no-repeat left center
 
 	&__header
+		display: flex
+		align-items: flex-start
 		margin-bottom: 25px
 
 		&_ava
 			display: inline-block;
-			margin-right: 4px
-			padding-top: 2px
+			margin-right: 6px
 
 	&__list-info
-		display: inline-block
+		display: flex
+		width: 250px
+		flex-wrap: wrap;
 		vertical-align: top	
 
 		&_item
 			display: inline-block	
-			margin-bottom: 3px
+			// margin-bottom: 3px
 
 		&_item_block	
 			display: block
 
 		&_link
 			vertical-align: top		
+
+		&_separator
+			margin: 0 8px	
 
 		&_link_name
 			font-weight: 400
