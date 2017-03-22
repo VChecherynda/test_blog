@@ -1,0 +1,53 @@
+.themes
+	margin-bottom: 30px
+
+	&_header
+		font-size: 14px
+		font-weight: 300
+		line-height: 15px
+
+	&__slider
+		position: relative
+		
+	&__content
+		box-sizing: border-box
+
+		&_elem_pic
+			display: block
+
+		&_elem_text
+			padding: 10px 12px
+			font: 400 14px/16px 'Fira Sans', sans-serif
+			color: #fff
+			background: rgba(0,0,0,.8)
+			position: absolute
+			left: 0
+			bottom: 0
+
+	&__arrows
+		width: 32px
+		height: 14px
+		font-size: 0
+		border: 1px solid $grey-1
+		border-radius: 2px
+		background: $grey-2
+		position: absolute
+		top: -30px
+		right: 0
+		overflow: hidden
+
+		&_left,
+		&_right
+			width: 15px
+			height: 14px
+			font-size: 100%
+			cursor: pointer
+
+		&_left
+			float: left
+			background: url('../img/arrow_left.png') no-repeat 40% 40% 
+
+		&_right
+			float: right
+			border-left: 1px solid $grey-1
+			background: url('../img/arrow_right.png') no-repeat 50% 40%
